@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Red+Hat+Text&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 id="heading">Sorting Visualizer</h1>
+    <div id="bttn">
+        <button class="sortbttn" id="New-array">New Array</button>
+        <button class="sortbttn" id="bubble-sort">Bubble Sort</button>
+        <button class="sortbttn" id="selection-sort">Selection Sort</button>
+        <button class="sortbttn" id="insertion-sort">Insertion Sort</button>
+        <button class="sortbttn" id="quick-sort">Quick Sort</button>
+        <button class="sortbttn" id="merge-sort">Merge Sort</button>
+        <button class="sortbttn" onclick="window.location.reload(true)">Reset</button>
+    </div>
+    <div id="sliders">
+        <span id="size">Size
+             <input type="range" id="arrSize" max="100" step=1 value=30>
+        </span>
+        <span id="speed">Speed
+            <input  type="range" id="sortingSpeed" min="20" max="300" stepDown=10 value=60>
+        </span>
+    </div>
+    <div id="sort-graph">
+
+    </div>
+
+    <script src="main.js"></script>
+    <script src="sorting_algorithm/bubbleSort.js"></script>
+    <script src="sorting_algorithm/selectionSort.js"></script>
+    <script src="sorting_algorithm/insertionSort.js"></script>
+    <script src="sorting_algorithm/quickSort.js"></script>
+    <script src="sorting_algorithm/mergeSort.js"></script>
+</body>
+
+</html>
